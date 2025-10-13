@@ -6,20 +6,19 @@
 
 }
 
-body {
-    background-color: #f5f5f5;
-}
-a{
+a {
     text-decoration: none;
 }
+
 /* Header */
 header {
-    background-image: linear-gradient(  to right,black, blue);
-    color:rgb(209, 209, 218);
+    background-image: linear-gradient(to right, black, blue);
+    color: rgb(209, 209, 218);
     width: 100%;
     height: 500;
 }
-img{
+
+img {
     border-radius: 5px;
 }
 
@@ -29,6 +28,7 @@ img{
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    color: #e8f7ff;
 }
 
 .titulo {
@@ -43,94 +43,105 @@ img{
 .menu {
     background-color: #023e8a;
     display: flex;
+    color: #f8f8f8;
+
 
 }
 
-.menu >ul {
+.menu>ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: baseline;
     list-style: none;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    align-content: baseline;
-}  
+    gap: 90px;
+    color: #e8f7ff;
 
-.menu >li {
-    flex: 1;
-    text-align: center;
-    justify-content: baseline;
 }
 
-.menu >a {
-    display: block;
-    color: white;
+.menu>li {
+    flex: 1;
+    text-align: center;
+
+}
+
+.menu>a {
+    color: #e8f7ff;
     text-decoration: none;
     padding: 1rem;
     transition: background-color 0.3s;
 }
 
-.menu > a:hover {
-    background-color: #03045e;
-    color:black;
-}
-.language-selected.change-br::before{
+.menu a:hover {
+    background-color: #4346da;
+    color: black;
+
 
 }
-.language{
+
+.language-selected.change-br::before {}
+
+.language {
     position: relative;
     width: 120px;
-    margin-left :40px; 
+    margin-left: 40px;
     font-weight: bold;
 }
-.language-selected{
+
+.language-selected {
     display: flex;
-    align-items:center ;
+    align-items: center;
     color: #ffff;
     cursor: pointer;
 }
-.language-selected:before{
-content:'';
-display: inline-block;
-width: 30px;
-height: 30px;
-background-image: url("https://flagsapi.com/BR/flat/64.png");
-background-size:contain ;
-background-repeat: no-repeat;
-margin-right: 10px;
+
+.language-selected:before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url("https://flagsapi.com/BR/flat/64.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
 }
-.language-selected.change-br::before{
+
+.language-selected.change-br::before {
     background-image: url("https://flagsapi.com/BR/flat/64.png");
 }
 
-.language-selected.change-en::before{
+.language-selected.change-en::before {
     background-image: url("https://flagsapi.com/EN/flat/64.png");
 }
 
-.language-selected.change-es::before{
+.language-selected.change-es::before {
     background-image: url("https://flagsapi.com/ES/flat/64.png");
 }
+
 .language ul {
     position: absolute;
     width: 140px;
     background-color: #ffff;
     border: 1px solid #f8f8f8;
     padding-top: 10px;
-    box-shadow: rgba(0, 10, 20,);
+    box-shadow: rgba(0, 10, 20, );
     display: none;
 }
 
-.language ul li{
+.language ul li {
     list-style: none;
 
 }
-.language ul li a{
+
+.language ul li a {
     display: block;
     color: black;
-    padding-top: 5px, 10px,;
+    padding-top: 5px, 10px, ;
 }
-.language ul li:hover{
-background-color: #f8f8f8f8;
+
+.language ul li:hover {
+    background-color: #f8f8f8f8;
 }
 
 
@@ -142,57 +153,59 @@ main {
     padding: 0 20px;
     gap: 20px;
 }
-.language ul li a:before{
-content:'';
-display: inline-block;
-width: 25px;
-height: 25px;
-background-size:contain ;
-background-repeat: no-repeat;
-vertical-align: middle;
-margin-right: 10px;
+
+.language ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 10px;
 }
-a.br::before{
-background-image: url("https://flagsapi.com/BR/flat/64.png");
+
+a.br::before {
+    background-image: url("https://flagsapi.com/BR/flat/64.png");
 }
-a.en::before{
-background-image: url("https://flagsapi.com/US/flat/64.png");
+
+a.en::before {
+    background-image: url("https://flagsapi.com/US/flat/64.png");
 }
-a.es::before{
-background-image: url("https://flagsapi.com/ES/flat/64.png");
+
+a.es::before {
+    background-image: url("https://flagsapi.com/ES/flat/64.png");
 }
-.language:hover ul{
+
+.language:hover ul {
     display: block;
 }
 
 .content-leftjk {
     flex: 1;
+    border: 2px solid #0077b6;
     background-color: white;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px rgba(91, 116, 255, 0.623);
 }
 
 .content-mainmeiota {
     flex: 2;
+    border: 2px solid #0077b6;
     background-color: white;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px rgba(91, 116, 255, 0.623);
 }
 
-.content-right {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
 
 .fc {
+    border: 2px solid #0077b6;
     background-color: white;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px rgba(91, 116, 255, 0.623);
 }
 
 /* Rodapé */
@@ -240,26 +253,22 @@ footer {
 }
 
 
-    .banner-cab {
-        margin-top: 10px;
-    }
 
-    .menu ul {
-        flex-direction: column;
-    }
 
-    main {
-        flex-direction: column;
-    }
 
-    .rodape-cima {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+main {
+    flex-direction: column;
 
-    .meio {
-        width: 100%;
-        max-width: 300px;
-        margin-bottom: 15px;
-    }
+}
+
+.rodape-cima {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.meio {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 15px;
+}
