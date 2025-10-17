@@ -7,14 +7,14 @@ header{
     background-color: #023e8a;
     color: azure;
 }
-main{padding: 10px;}
+
 /* Menu de navegação */
 .menu {
     background-color: #023e8a;
     display: flex;
 
 }
-
+main{padding: 10px;}
 .menu ul {
     display: flex;
     justify-content: space-between;

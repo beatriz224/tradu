@@ -1,274 +1,231 @@
 /* Reset e estilos gerais */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* Header */
 header {
-    background-image: linear-gradient(to right, black, blue);
-    color: rgb(209, 209, 218);
-    width: 100%;
-    height: 500;
+  background-image: linear-gradient(to right, black, blue);
+  color: rgb(209, 209, 218);
+  width: 100%;
+  height: 500;
 }
 
 img {
-    border-radius: 5px;
+  border-radius: 5px;
 }
 
 .header-container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    color: #e8f7ff;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .titulo {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .banner-cab img {
-    height: 60px;
+  height: 60px;
 }
 
 /* Menu de navegação */
 .menu {
-    background-color: #023e8a;
-    display: flex;
-    color: #f8f8f8;
-
-
+  background-color: #023e8a;
+  display: flex;
 }
 
-.menu>ul {
-    display: flex;
-    justify-content: baseline;
-    list-style: none;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    gap: 90px;
-    color: #e8f7ff;
-
+.menu > ul {
+  display: flex;
+  justify-content: baseline;
+  list-style: none;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  gap: 90px;
+}
+.menu > li {
+  flex: 1;
+  text-align: center;
+  color: #f8f8f8;
 }
 
-.menu>li {
-    flex: 1;
-    text-align: center;
-
-}
-
-.menu>a {
-    color: #e8f7ff;
-    text-decoration: none;
-    padding: 1rem;
-    transition: background-color 0.3s;
+.menu > a {
+  color: #f8f8f8;
+  text-decoration: none;
+  padding: 1rem;
+  transition: background-color 0.3s;
 }
 
 .menu a:hover {
-    background-color: #4346da;
-    color: black;
-
-
-}
-
-.language-selected.change-br::before {}
-
-.language {
-    position: relative;
-    width: 120px;
-    margin-left: 40px;
-    font-weight: bold;
-}
-
-.language-selected {
-    display: flex;
-    align-items: center;
-    color: #ffff;
-    cursor: pointer;
-}
-
-.language-selected:before {
-    content: '';
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    background-image: url("https://flagsapi.com/BR/flat/64.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-right: 10px;
+  background-color: #4346da;
+  color: black;
 }
 
 .language-selected.change-br::before {
-    background-image: url("https://flagsapi.com/BR/flat/64.png");
+}
+
+.language {
+  position: relative;
+  width: 120px;
+  margin-left: 40px;
+  font-weight: bold;
+}
+
+.language-selected {
+  display: flex;
+  align-items: center;
+  color: #ffff;
+  cursor: pointer;
+}
+
+.language-selected:before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url("https://flagsapi.com/BR/flat/64.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.language-selected.change-br::before {
+  background-image: url("https://flagsapi.com/BR/flat/64.png");
 }
 
 .language-selected.change-en::before {
-    background-image: url("https://flagsapi.com/EN/flat/64.png");
+  background-image: url("https://flagsapi.com/EN/flat/64.png");
 }
 
 .language-selected.change-es::before {
-    background-image: url("https://flagsapi.com/ES/flat/64.png");
+  background-image: url("https://flagsapi.com/ES/flat/64.png");
 }
 
 .language ul {
-    position: absolute;
-    width: 140px;
-    background-color: #ffff;
-    border: 1px solid #f8f8f8;
-    padding-top: 10px;
-    box-shadow: rgba(0, 10, 20, );
-    display: none;
+  position: absolute;
+  width: 140px;
+  background-color: #221f1f;
+  border: 1px solid #f8f8f8;
+  padding-top: 10px;
+  box-shadow: rgba(0, 10, 20);
+  display: none;
 }
 
 .language ul li {
-    list-style: none;
-
+  list-style: none;
 }
 
 .language ul li a {
-    display: block;
-    color: black;
-    padding-top: 5px, 10px, ;
+  display: block;
+  color: black;
+  padding-top: 5px, 10px;
 }
 
 .language ul li:hover {
-    background-color: #f8f8f8f8;
+  background-color: #f8f8f8f8;
 }
-
 
 /* Conteúdo principal */
 main {
-    display: flex;
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 20px;
-    gap: 20px;
+  flex-direction: column;
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+  gap: 20px;
 }
 
 .language ul li a:before {
-    content: '';
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-    margin-right: 10px;
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 10px;
 }
 
 a.br::before {
-    background-image: url("https://flagsapi.com/BR/flat/64.png");
+  background-image: url("https://flagsapi.com/BR/flat/64.png");
 }
 
 a.en::before {
-    background-image: url("https://flagsapi.com/US/flat/64.png");
+  background-image: url("https://flagsapi.com/US/flat/64.png");
 }
 
 a.es::before {
-    background-image: url("https://flagsapi.com/ES/flat/64.png");
+  background-image: url("https://flagsapi.com/ES/flat/64.png");
 }
 
 .language:hover ul {
-    display: block;
+  display: block;
 }
 
 .content-leftjk {
-    flex: 1;
-    border: 2px solid #0077b6;
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 10px 10px rgba(91, 116, 255, 0.623);
+  flex: 1;
+  border: 2px solid #0077b6;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 10px 10px rgba(91, 116, 255, 0.623);
 }
 
 .content-mainmeiota {
-    flex: 2;
-    border: 2px solid #0077b6;
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 10px 10px rgba(91, 116, 255, 0.623);
+  flex: 2;
+  border: 2px solid #0077b6;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 10px 10px rgba(91, 116, 255, 0.623);
 }
 
-
 .fc {
-    border: 2px solid #0077b6;
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 10px 10px rgba(91, 116, 255, 0.623);
+  border: 2px solid #0077b6;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 10px 10px rgba(91, 116, 255, 0.623);
 }
 
 /* Rodapé */
 footer {
-    background-color: #0077b6;
-    color: white;
-    padding: 2rem 0 0;
+  background-color: #3aa2db;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 30rem;
 }
 
-.rodape-titulo {
-    text-align: center;
-    margin-bottom: 2rem;
+footer ul {
+  list-style: none;
 }
 
-.rodape-titulo h1 {
-    font-size: 1.8rem;
+footer li {
+  font-size: large;
+  color: white;
 }
 
-.rodape-cima {
-    display: flex;
-    justify-content: flex-end;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+.footer-text {
+  border-radius: 10px;
+  padding-left: 5px;
+  width: 300px;
+  border: 1px solid rgb(50, 75, 239);
+  background-color: #5da5fd7d;
 }
 
-.meio {
-    background-color: #24446d;
-    padding: 15px;
-    border-radius: 5px;
-    width: 200px;
-}
-
-.meio .title h3 {
-    margin-bottom: 10px;
-    color: #90e0ef;
-}
-
-.rodape-baixo {
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-    background-color: #023e8a;
-}
-
-
-
-
-
-main {
-    flex-direction: column;
-
-}
-
-.rodape-cima {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.meio {
-    width: 100%;
-    max-width: 300px;
-    margin-bottom: 15px;
+.footer-title {
+  margin-bottom: 10px;
+  font-size: x-large;
+  color: rgb(14, 47, 132);
 }
