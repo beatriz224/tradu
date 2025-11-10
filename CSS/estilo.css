@@ -263,6 +263,7 @@ footer {
     padding: 1rem;
     margin-top: 2rem;
     background-color: #023e8a;
+    color: white;
 }
 
 
@@ -279,4 +280,8 @@ main {
 
 .meio {
    
+}
+.aa{
+    list-style: none;
+    text-decoration: none;
 }
