@@ -6,6 +6,18 @@
 
 }
 
+
+
+.menu ul li a {
+    color: #ebe2e2;
+
+}
+
+.me {
+    font-size: large;
+}
+
+
 a {
     text-decoration: none;
 }
@@ -30,7 +42,10 @@ img {
     padding: 0 20px;
     color: #e8f7ff;
 }
-
+.header-container ul li{
+ list-style: none;
+ text-decoration: none;
+}
 .titulo {
     font-size: 2rem;
 }
@@ -56,7 +71,6 @@ img {
     margin: 0 auto;
     padding: 0 20px;
     gap: 90px;
-    color: #e8f7ff;
 
 }
 
@@ -67,15 +81,15 @@ img {
 }
 
 .menu>a {
-    color: #e8f7ff;
+
     text-decoration: none;
     padding: 1rem;
     transition: background-color 0.3s;
 }
 
 .menu a:hover {
-    background-color: #4346da;
-    color: black;
+    background-color: #1a1efcd2;
+    color: rgba(0, 0, 0, 0.822);
 
 
 }
@@ -173,10 +187,6 @@ a.en::before {
     background-image: url("https://flagsapi.com/US/flat/64.png");
 }
 
-a.es::before {
-    background-image: url("https://flagsapi.com/ES/flat/64.png");
-}
-
 .language:hover ul {
     display: block;
 }
@@ -212,7 +222,7 @@ a.es::before {
 footer {
     background-color: #0077b6;
     color: white;
-    padding: 2rem 0 0;
+
 }
 
 .rodape-titulo {
@@ -238,6 +248,9 @@ footer {
     padding: 15px;
     border-radius: 5px;
     width: 200px;
+     width: 100%;
+    max-width: 300px;
+    margin-bottom: 15px;
 }
 
 .meio .title h3 {
@@ -250,10 +263,8 @@ footer {
     padding: 1rem;
     margin-top: 2rem;
     background-color: #023e8a;
+    color: white;
 }
-
-
-
 
 
 main {
@@ -262,13 +273,15 @@ main {
 }
 
 .rodape-cima {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
 .meio {
-    width: 100%;
-    max-width: 300px;
-    margin-bottom: 15px;
+   
+}
+.aa{
+    list-style: none;
+    text-decoration: none;
 }
