@@ -6,6 +6,18 @@
 
 }
 
+
+
+.menu ul li a {
+    color: #ebe2e2;
+
+}
+
+.me {
+    font-size: large;
+}
+
+
 a {
     text-decoration: none;
 }
@@ -18,9 +30,6 @@ header {
     height: 500;
 }
 
-img {
-    border-radius: 5px;
-}
 
 .header-container {
     display: flex;
@@ -30,7 +39,10 @@ img {
     padding: 0 20px;
     color: #e8f7ff;
 }
-
+.header-container ul li{
+ list-style: none;
+ text-decoration: none;
+}
 .titulo {
     font-size: 2rem;
 }
@@ -56,7 +68,6 @@ img {
     margin: 0 auto;
     padding: 0 20px;
     gap: 90px;
-    color: #e8f7ff;
 
 }
 
@@ -67,20 +78,18 @@ img {
 }
 
 .menu>a {
-    color: #e8f7ff;
+
     text-decoration: none;
     padding: 1rem;
     transition: background-color 0.3s;
 }
 
 .menu a:hover {
-    background-color: #4346da;
-    color: black;
+    background-color: #9d9ef0d2;
+    color: rgba(0, 0, 0, 0.822);
 
 
 }
-
-.language-selected.change-br::before {}
 
 .language {
     position: relative;
@@ -101,33 +110,32 @@ img {
     display: inline-block;
     width: 30px;
     height: 30px;
-    background-image: url("https://flagsapi.com/BR/flat/64.png");
+    background-image: url(https://flagsapi.com/BR/flat/64.png);
     background-size: contain;
     background-repeat: no-repeat;
     margin-right: 10px;
 }
 
-.language-selected.change-br::before {
-    background-image: url("https://flagsapi.com/BR/flat/64.png");
+.language-selected.change-br::before{
+    background-image: url(https://flagsapi.com/BR/flat/64.png);
 }
-
-.language-selected.change-en::before {
-    background-image: url("https://flagsapi.com/EN/flat/64.png");
+.language-selected.change-en:before{
+    background-image: url(https://flagsapi.com/US/flat/64.png);
 }
-
-.language-selected.change-es::before {
-    background-image: url("https://flagsapi.com/ES/flat/64.png");
+.language-selected.change-es::before{
+    background-image: url(https://flagsapi.com/ES/flat/64.png);
 }
-
 .language ul {
     position: absolute;
     width: 140px;
     background-color: #ffff;
     border: 1px solid #f8f8f8;
     padding-top: 10px;
-    box-shadow: rgba(0, 10, 20, );
+    box-shadow: 0PX 1PX 10PX rgba(0, 10, 20, );
     display: none;
 }
+
+
 
 .language ul li {
     list-style: none;
@@ -137,25 +145,15 @@ img {
 .language ul li a {
     display: block;
     color: black;
-    padding-top: 5px, 10px, ;
+    padding-top: 5px , 10px;
 }
 
 .language ul li:hover {
     background-color: #f8f8f8f8;
+       
 }
-
-
-/* Conteúdo principal */
-main {
-    display: flex;
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 20px;
-    gap: 20px;
-}
-
-.language ul li a:before {
-    content: '';
+.language ul li a::before{
+     content: '';
     display: inline-block;
     width: 25px;
     height: 25px;
@@ -164,21 +162,30 @@ main {
     vertical-align: middle;
     margin-right: 10px;
 }
-
-a.br::before {
-    background-image: url("https://flagsapi.com/BR/flat/64.png");
+a.br::before{
+    background-image: url(https://flagsapi.com/BR/flat/64.png);
 }
 
-a.en::before {
-    background-image: url("https://flagsapi.com/US/flat/64.png");
+a.en:before{
+    background-image: url(https://flagsapi.com/US/flat/64.png);
 }
 
-a.es::before {
-    background-image: url("https://flagsapi.com/ES/flat/64.png");
+a.es::before{
+    background-image: url(https://flagsapi.com/ES/flat/64.png);
 }
 
-.language:hover ul {
+.language:hover ul{
     display: block;
+}
+  
+
+/* Conteúdo principal */
+main {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    gap: 20px;
 }
 
 .content-leftjk {
@@ -212,7 +219,7 @@ a.es::before {
 footer {
     background-color: #0077b6;
     color: white;
-    padding: 2rem 0 0;
+
 }
 
 .rodape-titulo {
@@ -238,6 +245,9 @@ footer {
     padding: 15px;
     border-radius: 5px;
     width: 200px;
+     width: 100%;
+    max-width: 300px;
+    margin-bottom: 15px;
 }
 
 .meio .title h3 {
@@ -250,10 +260,8 @@ footer {
     padding: 1rem;
     margin-top: 2rem;
     background-color: #023e8a;
+    color: white;
 }
-
-
-
 
 
 main {
@@ -262,13 +270,14 @@ main {
 }
 
 .rodape-cima {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.meio {
-    width: 100%;
-    max-width: 300px;
-    margin-bottom: 15px;
+
+.aa{
+    list-style: none;
+    text-decoration: none;
 }
+
